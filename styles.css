@@ -1,0 +1,111 @@
+html,
+body {
+  margin: 0;
+  background-color: #fffbf4
+}
+
+.preheader {
+	padding: 30px;
+}
+
+.logo {
+	display: inline-block;
+	height: 60px;
+	vertical-align: text-bottom; 
+	margin: auto;
+	float: left;
+}
+
+.nav-list {
+  list-style: none;
+  text-align: right;
+}
+
+.nav-list li {
+  display: inline-block;	
+  margin-right: 25px;
+  font-family: "Arvo", serif;
+  font-size: 18px;
+  color: #2d1c0b;
+}
+
+.hero {
+  background-size: 150%;
+  background-repeat: no-repeat;
+  background-position: left;
+  -webkit-animation: slide 40s ease;
+  transform: translate3d(0,0,0);
+  height: 50vh;
+}
+
+.hero:before {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  background: rgba(214, 249, 255,.8)
+}
+
+.hero__content {
+  z-index: 101;
+  position: relative;
+}
+
+@-webkit-keyframes slide {
+  0%   { background-position: left; }
+  50%   { background-position: right; }
+  100% { background-position: left; }
+}
+
+.hero h1 {
+  font-family: "PT Sans", sans-serif;
+  font-size: 85px;
+  font-weight: bold;
+  color: white;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 8px #000000;
+}
+
+.hero__content {
+  padding: 40px 20px 0 20px;
+}
+
+.btn {
+  background: #086877;
+  color: white;
+  text-decoration: none;
+  padding: 10px 40px;
+  display: inline-block;
+  border-radius: 8px;
+  font-family: "Arvo", serif;
+  font-size: 20px;
+}
+
+.option-set {
+  display: flex;
+  justify-content: space-around;
+  width: auto;
+  margin-top: 50px;
+  text-align: center;
+}
+
+.option {
+  display: inline-block;
+}
+
+.option h2 {
+  font-family: "Arvo", serif;
+  font-size: 32px;
+  color: #2d1c0b;
+}
+
+.option p {
+	font-family: "PT Sans", sans-serif;
+	font-size: 20px;
+	color: #2d1c0b;
+}
+
+.fa-calendar, .fa-ticket, .fa-id-card-o {
+	color: #2d1c0b;
+}
